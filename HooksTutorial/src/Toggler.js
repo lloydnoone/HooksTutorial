@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import useToggle from './hooks/useToggle'
+import useToggleState from './hooks/useToggleState'
 function Toggler() {
-  const [isHappy, toggleIsHappy] = useToggle(true)
-  const [isHeartBroken, toggleIsHeartBroken] = useToggle(false)
+  const [isHappy, toggleIsHappy] = useToggleState(true)
+  const [isHeartBroken, toggleIsHeartBroken] = useToggleState(false)
   return (
     <div>
       <h1 onClick={toggleIsHappy} >{isHappy ? 'happy' : 'not happy'}</h1>
