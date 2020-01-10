@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
 import TodoApp from './TodoApp'
 
-class App extends Component {
-  render() {
-    return (
-      <TodoApp/>
-    )
-  }
+function App() {
+  return <TodoApp/>
 }
 
 ReactDOM.render(
