@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, memo } from 'react'
 
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
@@ -50,4 +50,4 @@ function Todo({ id, task, completed }) {
   )
 }
 
-export default Todo
+export default memo(Todo)
